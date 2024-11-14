@@ -1,0 +1,47 @@
+/* Skills Section */
+.skills-section {
+    background-color: #170150;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .skills-title {
+    font-size: 1.875rem; /* 3xl size */
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .highlighted-text {
+    color: rgb(238, 239, 237);
+  }
+  
+  .skills-container {
+    max-width: 48rem; /* 4xl size */
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  
+  .skill {
+    margin-top: 1rem;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .progress-bar {
+    background-color: #8d6d6d; /* Gray-700 */
+    height: 0.5rem; /* 2 units of height */
+    border-radius: 9999px;
+    margin-top: 0.5rem;
+  }
+  
+  .progress {
+    background-color: #15d0d3;
+    height: 0.5rem;
+    border-radius: 9999px;
+  }
+  

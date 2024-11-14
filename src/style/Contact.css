@@ -1,0 +1,106 @@
+/* General Styles */
+body {
+    font-family: "Arial", sans-serif;
+  }
+  
+  #Contact {
+    background-color: #1A0142;
+    color: white;
+    padding: 4rem 2rem;
+    
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .border {
+    width: 6rem;
+    height: 2px;
+    background-color: white;
+    margin: 1rem auto;
+  }
+  
+  /* Contact Info Section */
+  .contact-content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+  }
+  
+  .contact-info {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-item i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
+  
+  .contact-item p {
+    margin: 0;
+  }
+  
+  .contact-form {
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #3A2A5B;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    border-radius: 20px;
+  }
+  
+  .contact-form button {
+    cursor: pointer;
+    background-color: #3A2A5B;
+    border-radius: 30px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-row input {
+    width: 48%;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

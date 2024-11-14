@@ -1,0 +1,74 @@
+.hero-section {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background-color: #225b81;
+  }
+  
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text-container {
+    text-align: left;
+  }
+  
+  .hi-text {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #f1efef;
+  }
+  
+  .name-text {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
+  .role-text {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+  }
+  
+  .highlighted-text {
+    color: #FFA500;
+  }
+  
+  .bio-text {
+    margin-top: 1rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .download-button {
+    background-color: #170550;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    margin-top: 5rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .download-button:hover {
+    background-color: #FF7F00;
+  }
+  
+  .image-container {
+    /* background-color: #600; */
+  }
+  
+  .image-container img {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
