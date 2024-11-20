@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import "../style/About.css";
+import "../../style/About.css";
+import img from "../../../Public/Images/1.jpg"
 const About = () => {
   return (
     <div>
@@ -15,7 +16,7 @@ const About = () => {
           <div className="about-content">
             <div className="about-image-container">
               <Image
-                src="/1.jpg" // Image ka path
+                src={img} // Image ka path
                 alt="My Image Description"
                 width={300} // Width specify karein
                 height={400} // Height specify karein

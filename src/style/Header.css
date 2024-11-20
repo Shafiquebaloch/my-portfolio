@@ -1,5 +1,5 @@
 /* Header styles */
-.header {
+/*.header {
     background-color: #170550;
     padding: 1rem;
     display: flex;
@@ -8,7 +8,7 @@
   }
   
   /* Logo */
-  .logo {
+  /*.logo {
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -16,7 +16,7 @@
   }
   
   /* Navigation links (hidden on mobile) */
-  .nav-links {
+  /*.nav-links {
     display: none;
   }
   
@@ -28,7 +28,7 @@
   } 
   
   /* Individual nav link */
-  .nav-link {
+  /*.nav-link {
     text-decoration: none;
     color: aqua;
     transition: color 0.3s;
@@ -37,19 +37,191 @@
   
   .nav-link:hover {
     color: #c23a3a; /* Orange */
-  }
+  /*}
   
   /* Hire me button */
-  .hire-button {
+  /*.hire-button {
     background-color: white;
     color: black;
     padding: 0.25rem 1.5rem;
     border-radius: 9999px; /* Full rounded */
-    font-weight: bold;
+    /*font-weight: bold;
     transition: background-color 0.3s;
   }
   
   .hire-button:hover {
     background-color: #ffa500; /* Orange */
+  /* } */
+  /* Basic header styles */
+/* /* Basic header styles */
+/* Basic header styles */
+.header {
+  background-color: #170550;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Ensure absolute positioning works for other elements */
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: aqua;
+}
+
+/* Navigation links (hidden on mobile, visible on desktop) */
+.nav-links {
+  display: flex;
+  gap: 3rem;  /* Space between links */
+  justify-content: center;  /* Center items horizontally */
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: aqua;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #c23a3a; /* Orange on hover */
+}
+
+/* Hire me button */
+.hire-button {
+  background-color: white;
+  color: black;
+  padding: 0.25rem 1.5rem;
+  border-radius: 9999px; /* Full rounded button */
+  font-weight: bold;
+  transition: background-color 0.3s;
+  display: inline-block;  /* Ensure it stays inline on large screens */
+}
+
+.hire-button:hover {
+  background-color: #ffa500; /* Orange on hover */
+}
+
+/* Hamburger menu (only for mobile) */
+.hamburger {
+  display: none; /* Hidden by default on large screens */
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem; /* Positioned to the right on mobile */
+  z-index: 20;
+}
+
+/* Hamburger icon */
+.hamburger-icon {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  transition: 0.3s;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  transition: 0.3s;
+}
+
+.hamburger-icon::before {
+  top: -8px;
+}
+
+.hamburger-icon::after {
+  top: 8px;
+}
+
+/* Active hamburger state (for mobile menu) */
+.hamburger.active .hamburger-icon {
+  background-color: transparent;
+}
+
+.hamburger.active .hamburger-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger.active .hamburger-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Mobile view (screen width < 768px) */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px; /* Just below the header */
+    right: 0;
+    background-color: #170550;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none; /* Hidden by default */
+    z-index: 10;
   }
-  
+
+  .nav-links.active {
+    display: flex; /* Show when active */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu on mobile */
+  }
+
+  .nav-link {
+    margin: 1rem 0;
+    font-size: 1.25rem;
+  }
+
+  .hire-button {
+    display: none; /* Hide the button on mobile */
+  }
+}
+
+/* Tablet view (screen width >= 768px and < 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .nav-links {
+    gap: 2rem;
+  }
+}
+
+/* Desktop view (screen width >= 1024px) */
+@media (min-width: 1024px) {
+  .header {
+    padding: 1.5rem 3rem; /* More padding for larger screens */
+  }
+
+  .nav-links {
+    gap: 2rem;  /* Space between navigation links */
+    display: flex;  /* Ensure the links are always visible */
+  }
+
+  .hire-button {
+    display: inline-block; /* Ensure button shows on desktop */
+  }
+
+  /* Adjust font size of nav links for larger screens */
+  .nav-link {
+    font-size: 1.1rem;
+  }
+}

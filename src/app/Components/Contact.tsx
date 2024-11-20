@@ -1,7 +1,7 @@
 import React from "react"
 import { FaPhoneAlt,FaRegEnvelope } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import "@/style/Contact.css"
+import "../../style/Contact.css"
 
 
 const Contact = () => {

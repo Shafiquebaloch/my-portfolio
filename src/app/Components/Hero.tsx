@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image"
-
-import "../style/Hero.css"
+import "../../style/Hero.css"
+import Img2 from "../../../Public/Images/img2.png"
 
 import { FaFacebook,FaLinkedin,FaTwitter ,FaGithub  } from "react-icons/fa";
 
@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
         <div className="image-container">
         <Image
-        src="/img2.png" // Image ka path
+        src={Img2} // Image ka path
         alt="My Image Description"
         width={500} // Width specify karein
         height={300} // Height specify karein

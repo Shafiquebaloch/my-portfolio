@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import "@/style/Project.css"
+import "../../style/Project.css"
+import img2 from "../../../Public/Images/img1.png"
 const Projects = () => {
   return (
     <section className="projects-section" id="Projects">
@@ -11,7 +12,7 @@ const Projects = () => {
       <div className="projects-grid">
         <div className="project-item">
         <Image
-              src="/img1.png" // Path ko slash se start karna hoga
+              src={img2} // Path ko slash se start karna hoga
               alt="A computer setup with multiple monitors displaying code"
               width={300}
               height={200} className="rounded-lg"
@@ -25,7 +26,7 @@ const Projects = () => {
         </div>
         <div className="project-item">
         <Image
-              src="/img1.png" // Path ko slash se start karna hoga
+              src={img2} // Path ko slash se start karna hoga
               alt="A computer setup with multiple monitors displaying code"
               width={300}
               height={200} className="rounded-lg"
@@ -39,7 +40,7 @@ const Projects = () => {
         </div>
         <div className="project-item">
         <Image
-              src="/img1.png" // Path ko slash se start karna hoga
+              src={img2} // Path ko slash se start karna hoga
               alt="A computer setup with multiple monitors displaying code"
               width={300}
               height={200} className="rounded-lg"
@@ -53,22 +54,7 @@ const Projects = () => {
         </div>
         <div className="project-item">
         <Image
-              src="/img1.png" // Path ko slash se start karna hoga
-              alt="A computer setup with multiple monitors displaying code"
-              width={300}
-              height={200} className="rounded-lg"
-            />
-          <div className="overlay">
-            <div className="overlay-content">
-            <FaExternalLinkAlt/>
-              <p className="overlay-text">Web Design</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="project-item">
-        <Image
-              src="/img1.png" // Path ko slash se start karna hoga
+              src={img2}  // Path ko slash se start karna hoga
               alt="A computer setup with multiple monitors displaying code"
               width={300}
               height={200} className="rounded-lg"
@@ -83,7 +69,7 @@ const Projects = () => {
 
         <div className="project-item">
         <Image
-              src="/img1.png" // Path ko slash se start karna hoga
+              src={img2}  // Path ko slash se start karna hoga
               alt="A computer setup with multiple monitors displaying code"
               width={300}
               height={200} className="rounded-lg"
@@ -98,7 +84,7 @@ const Projects = () => {
 
         <div className="project-item">
         <Image
-              src="/img1.png" // Path ko slash se start karna hoga
+              src={img2}  // Path ko slash se start karna hoga
               alt="A computer setup with multiple monitors displaying code"
               width={300}
               height={200} className="rounded-lg"
@@ -113,7 +99,22 @@ const Projects = () => {
 
         <div className="project-item">
         <Image
-              src="/img1.png" // Path ko slash se start karna hoga
+              src={img2}  // Path ko slash se start karna hoga
+              alt="A computer setup with multiple monitors displaying code"
+              width={300}
+              height={200} className="rounded-lg"
+            />
+          <div className="overlay">
+            <div className="overlay-content">
+            <FaExternalLinkAlt/>
+              <p className="overlay-text">Web Design</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="project-item">
+        <Image
+             src={img2}  // Path ko slash se start karna hoga
               alt="A computer setup with multiple monitors displaying code"
               width={300}
               height={200} className="rounded-lg"
